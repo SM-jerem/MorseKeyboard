@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:padding="8dp">
+
+    <!-- Affichage du buffer Morse -->
+    <TextView
+        android:id="@+id/morseDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#2D2D2D"
+        android:padding="12dp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Affichage du texte prévisualisé -->
+    <TextView
+        android:id="@+id/previewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="#252525"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Grand bouton Morse -->
+    <Button
+        android:id="@+id/morseButton"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="MORSE\n(Appui court/long)"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="#3A7CA5"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Ligne de boutons secondaires -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- Bouton Espace -->
+        <Button
+            android:id="@+id/spaceButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="ESPACE"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="#4A4A4A"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Bouton Valider -->
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="VALIDER"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="#2E7D32"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp" />
+
+        <!-- Bouton Effacer -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="⌫"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:background="#C62828"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
